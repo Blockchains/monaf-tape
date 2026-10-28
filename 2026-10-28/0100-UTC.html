@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>monaf signals tape 2026-10-28 01:00 UTC</title><style>
+body{font:14px/1.45 ui-sans-serif,system-ui,sans-serif;background:#0b0b0f;color:#e4e4e7;max-width:1000px;margin:0 auto;padding:16px}h1{font-size:18px;word-break:break-all}h1 a{color:#a78bfa}h2{font-size:15px;margin-top:24px;border-bottom:1px solid #27272a;padding-bottom:4px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}td,th{border-bottom:1px solid #1f1f23;padding:3px 6px;text-align:right}td:first-child,th:first-child{text-align:left}.m{color:#a1a1aa}code{color:#a1a1aa}.pos{color:#6ee7b7}.neg{color:#fda4af}</style></head><body>
+<h1><a href="https://blockchains.github.io/monaf-tape/2026-10-28/0100-UTC.html">https://blockchains.github.io/monaf-tape/2026-10-28/0100-UTC.html</a></h1>
+<p class="m">Window 2026-10-28 01:00–02:00 UTC (01:00–02:00 GMT Europe/London) · partial hour, data up to 01:05 UTC. Generated 2026-10-28 01:05:52 UTC. Source: QuickNode WSS logs over all mapped Monad v2/v3/v4 pools + Binance 1m klines. Research data only, not trading advice; past results do not predict future results. <a href="../index.html">All tapes</a></p>
+<h2>Feed health and latency</h2>
+<table><tr><th>Metric</th><th>Value</th></tr><tr><td>Decoded events in window</td><td>123</td></tr><tr><td>of which backfilled after a reconnect</td><td>0</td></tr><tr><td>newHeads received</td><td>458</td></tr><tr><td>Max gap between heads (s)</td><td>1.0</td></tr><tr><td>Log lag after head p50 / p90 (ms)</td><td>2 / 8</td></tr><tr><td>Disconnects / backfills</td><td>0 / 0</td></tr><tr><td>Unmapped pool logs (collector total)</td><td>1</td></tr><tr><td>Current: connected / head age (ms)</td><td>True / 232</td></tr></table>
+<h2>Collector uptime</h2>
+<table><tr><th>Metric</th><th>Value</th></tr><tr><td>Minutes with a heartbeat in window</td><td>2 of 6</td></tr><tr><td>Collector process up (h)</td><td>0.04</td></tr><tr><td>Restarts in window / total</td><td>0 / 0</td></tr><tr><td>Data days collected</td><td>1 day folder(s), 0.00 days of events (target ≥7)</td></tr></table>
+<h2>Flow imbalance per token (all pools, this window)</h2>
+<table><tr><th>Token</th><th>Buy $</th><th>Sell $</th><th>Imbalance</th><th>Legs</th></tr><tr><td>MON</td><td>1,351</td><td>1,522</td><td>-0.06</td><td>91</td></tr><tr><td>WETH</td><td>549</td><td>0</td><td>1.00</td><td>5</td></tr><tr><td><code>0x0a332311…</code></td><td>3</td><td>436</td><td>-0.98</td><td>29</td></tr><tr><td><code>0xaca92e43…</code></td><td>0</td><td>68</td><td>-1.00</td><td>1</td></tr><tr><td><code>0x0c65a0bc…</code></td><td>0</td><td>14</td><td>-1.00</td><td>2</td></tr><tr><td><code>0xd8e004ac…</code></td><td>2</td><td>2</td><td>0.02</td><td>2</td></tr></table>
+<h2>Fade triggers (last 3 hours, with later outcomes)</h2>
+<p class="m">Rule under test: all-pool 5m imbalance ≥ 0.3 in absolute value on ≥ $5,000 volume → fade it; outcome = Binance close 15m later, in bps, signed in the fade direction. Non-overlapping per asset (no new trigger for 15m).</p>
+<p class="m">None in this window.</p>
+<h2>Liquidity shocks (router pools)</h2>
+<p class="m">None in this window.</p>
+<p class="m">None in this window.</p>
+<h2>Running fade research (all data so far)</h2>
+<table><tr><th>Set</th><th>n</th><th>Hit rate</th><th>Mean bps</th><th>Median bps</th><th>t</th></tr><tr><td>All</td><td>0</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>ETH</td><td>0</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>BTC</td><td>0</td><td>–</td><td>–</td><td>–</td><td>–</td></tr></table>
+<p class="m">n counts resolved, non-overlapping triggers. Fewer than 7 days collected, so treat this as unproven. t is not corrected for testing several rules.</p>
+</body></html>
