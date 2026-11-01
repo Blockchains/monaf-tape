@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>monaf signals tape 2026-11-01 14:00 UTC</title><style>body{font:14px/1.45 ui-sans-serif,system-ui,sans-serif;background:#0b0b0f;color:#e4e4e7;max-width:1000px;margin:0 auto;padding:16px}h1{font-size:18px;word-break:break-all}h1 a{color:#a78bfa}h2{font-size:15px;margin-top:24px;border-bottom:1px solid #27272a;padding-bottom:4px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}td,th{border-bottom:1px solid #1f1f23;padding:3px 6px;text-align:right}td:first-child,th:first-child{text-align:left}.m{color:#a1a1aa}code{color:#a1a1aa}.pos{color:#6ee7b7}.neg{color:#fda4af}.nav{margin:12px 0;display:flex;gap:12px;flex-wrap:wrap}.nav a{color:#a78bfa}</style></head><body>
+<h1><a href="https://blockchains.github.io/monaf-tape/2026-11-01/1400-UTC.html">https://blockchains.github.io/monaf-tape/2026-11-01/1400-UTC.html</a></h1>
+<p class="m">Window 2026-11-01 14:00–15:00 UTC (14:00–15:00 GMT Europe/London). Generated 2026-11-01 15:00:18 UTC. Source: QuickNode WSS logs over all mapped Monad v2/v3/v4 pools + Binance 1m klines. Research data only, not trading advice; past results do not predict future results. <a href="../index.html">All tapes</a></p>
+<h2>Feed health and latency</h2>
+<table><tr><th>Metric</th><th>Value</th></tr><tr><td>Decoded events in window</td><td>0</td></tr><tr><td>of which backfilled after a reconnect</td><td>0</td></tr><tr><td>newHeads received</td><td>0</td></tr><tr><td>Max gap between heads (s)</td><td>–</td></tr><tr><td>Log lag after head p50 / p90 (ms)</td><td>– / –</td></tr><tr><td>Disconnects / backfills</td><td>1 / 0</td></tr><tr><td>Unmapped pool logs (collector total)</td><td>6,379</td></tr><tr><td>Current: connected / head age (ms)</td><td>False / 167,137,797</td></tr></table>
+<h2>Collector uptime</h2>
+<table><tr><th>Metric</th><th>Value</th></tr><tr><td>Minutes with a heartbeat in window</td><td>16 of 60</td></tr><tr><td>Collector process up (h)</td><td>71.92</td></tr><tr><td>Restarts in window / total</td><td>0 / 2</td></tr><tr><td>Data days collected</td><td>4 day folder(s), 4.58 days of events (target ≥7)</td></tr></table>
+<h2>Flow imbalance per token (all pools, this window)</h2>
+<p class="m">None in this window.</p>
+<h2>Fade triggers (last 3 hours, with later outcomes)</h2>
+<p class="m">Rule under test: all-pool 5m imbalance ≥ 0.3 in absolute value on ≥ $5,000 volume → fade it; outcome = Binance close 15m later, in bps, signed in the fade direction. Non-overlapping per asset (no new trigger for 15m).</p><p class="m">None in this window.</p>
+<h2>Liquidity shocks (router pools)</h2>
+<p class="m">None in this window.</p><p class="m">None in this window.</p>
+<h2>Running fade research (all data so far)</h2>
+<table><tr><th>Set</th><th>n</th><th>Hit rate</th><th>Mean bps</th><th>Median bps</th><th>t</th></tr><tr><td>All</td><td>190</td><td>46%</td><td>-0.1</td><td>-2.1</td><td>-0.05</td></tr><tr><td>ETH</td><td>103</td><td>45%</td><td>1.6</td><td>-1.7</td><td>0.55</td></tr><tr><td>BTC</td><td>87</td><td>47%</td><td>-2.1</td><td>-3.3</td><td>-0.69</td></tr></table><p class="m">n counts resolved, non-overlapping triggers. Fewer than 7 days collected, so treat this as unproven. t is not corrected for testing several rules.</p>
+<h2>Analysis / thinking</h2>
+<p>Window 2026-11-01 14:00–15:00 UTC covered 0 decoded swap/liquidity events.</p><p>No lag samples in this hour — either quiet flow or the collector was offline for the window.</p><p>No mapped token flow in this window.</p><p>No fade triggers met the |I|≥0.3 / $5,000 bar in the trailing 3h.</p><p>No ≥20% liquidity shocks on router pools this hour.</p><p>All-history fade research (non-overlapping): n=190, hit 46%, mean -0.1 bps, median -2.1 bps, t=-0.05. Data span 4.58 days across 4 day folder(s); below the 7-day bar, so treat as unproven.</p><p>Collector heartbeat: connected=False, headAgeMs=167137797, process up 71.92 h, restarts in window 0 (total recorded 2). Minute heartbeats present 16/60.</p><p>Interpretation: this page is a research tape of observed Monad pool flow against Binance closes. It does not execute, size, or recommend trades. Past hit rates do not predict future results.</p>
+
+</body></html>
